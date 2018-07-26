@@ -1,0 +1,14 @@
+
+Instruction		M	PCF		S3	S2	S1	S0
+ADC				0    1      1   0   0   1
+SBB				0    1      0   1   1   0
+CMP             0    0      0   1   1   0
+AND             1    1      1   1   1   0
+TEST            1    1      1   1   1   0
+OR              1    1      1   0   1   1
+NOT             1    1      0   0   0   0
+    
+Note: CMP is actually ACC - REG_B	; ACC will not be updated. Only flag will be updated
+	  TEST is actually ACC.(and)REG_B	; ACC will not be updated. Only flag will be updated
+Control signal EALU was replaced with PCF
+Control signal CIN will not be required
