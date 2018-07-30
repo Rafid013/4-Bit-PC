@@ -75,7 +75,7 @@ public class Main
                                 break;
                             }
                             default: {
-                                String str = "13 \n" + operations[1];
+                                String str = "14 \n" + operations[1];
                                 out.write(str);
                                 out.newLine();
                                 break;
@@ -85,123 +85,123 @@ public class Main
                     }
 
                     case "SBB": {
-                        String str = "18 \n" + operations[1];
+                        String str = "1A \n" + operations[1];
                         out.write(str);
                         out.newLine();
                         break;
                     }
 
                     case "OUT": {
-                        String str = "1D";
+                        String str = "20";
                         out.write(str);
                         out.newLine();
                         break;
                     }
 
                     case "PUSH": {
-                        String str = "1E";
-                        out.write(str);
-                        out.newLine();
-                        break;
-                    }
-
-                    case "POP": {
                         String str = "21";
                         out.write(str);
                         out.newLine();
                         break;
                     }
 
-                    case "AND": {
+                    case "POP": {
                         String str = "24";
                         out.write(str);
                         out.newLine();
                         break;
                     }
 
+                    case "AND": {
+                        String str = "27";
+                        out.write(str);
+                        out.newLine();
+                        break;
+                    }
+
                     case "OR": {
-                        String str = "25\n" + operations[1];
+                        String str = "29\n" + operations[1];
                         out.write(str);
                         out.newLine();
                         break;
                     }
                     case "ORI": {
-                        String str = "2A\n" + operations[1];
+                        String str = "2F\n" + operations[1];
                         out.write(str);
                         out.newLine();
                         break;
                     }
                     case "NOT": {
-                        String str = "2D";
-                        out.write(str);
-                        out.newLine();
-                        break;
-                    }
-                    case "XCHG": {
-                        String str = "2E";
-                        out.write(str);
-                        out.newLine();
-                        break;
-                    }
-
-                    case "CMP": {
-                        String str = "31";
-                        out.write(str);
-                        out.newLine();
-                        break;
-                    }
-                    case "TEST": {
-                        String str = "32";
-                        out.write(str);
-                        out.newLine();
-                        break;
-                    }
-                    case "ROL": {
                         String str = "33";
                         out.write(str);
                         out.newLine();
                         break;
                     }
-
-                    case "RCL": {
+                    case "XCHG": {
                         String str = "34";
                         out.write(str);
                         out.newLine();
                         break;
                     }
 
-                    case "JMP": {
-                        String str = "36\n" + operations[1];
+                    case "CMP": {
+                        String str = "37";
                         out.write(str);
                         out.newLine();
                         break;
                     }
-                    case "JNZ": {
-                        String str = "39\n" + operations[1];
+                    case "TEST": {
+                        String str = "39";
                         out.write(str);
                         out.newLine();
                         break;
                     }
-                    case "CLC": {
-                        String str = "3A";
-                        out.write(str);
-                        out.newLine();
-                        break;
-                    }
-                    case "CLS": {
+                    case "ROL": {
                         String str = "3B";
                         out.write(str);
                         out.newLine();
                         break;
                     }
-                    case "HLT": {
+
+                    case "RCL": {
                         String str = "3C";
                         out.write(str);
                         out.newLine();
                         break;
                     }
+
+                    case "JMP": {
+                        String str = "3E\n" + operations[1];
+                        out.write(str);
+                        out.newLine();
+                        break;
+                    }
+                    case "JNZ": {
+                        String str = "41\n" + operations[1];
+                        out.write(str);
+                        out.newLine();
+                        break;
+                    }
+                    case "CLC": {
+                        String str = "43";
+                        out.write(str);
+                        out.newLine();
+                        break;
+                    }
+                    case "CLS": {
+                        String str = "44";
+                        out.write(str);
+                        out.newLine();
+                        break;
+                    }
+                    case "HLT": {
+                        String str = "45";
+                        out.write(str);
+                        out.newLine();
+                        break;
+                    }
                     case "NOP": {
-                        String str = "3D";
+                        String str = "46";
                         out.write(str);
                         out.newLine();
                         break;
